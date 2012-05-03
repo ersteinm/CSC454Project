@@ -1,45 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/backrepeat"
-    android:gravity="center"
-    android:orientation="vertical" >
+    android:background="@drawable/backrepeat" >
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:gravity="center"
-        android:orientation="vertical" >
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:text="Hockey Stat Keeper"
+        android:textSize="40dp" />
 
-        <TextView
-            android:id="@+id/textView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            
-            android:text="HockeyShots!"
-            android:textSize="40dp" />
+    <Button
+        android:id="@+id/statsButton"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="25dp"
+        android:text="Live Stats"
+        android:textSize="30dp" />
 
-        <Button
-            android:id="@+id/statsButton"
-            android:layout_width="250dp"
-            android:layout_height="100dp"
-            android:text="Live Stats"
-            android:textSize="30dp" />
+    <Button
+        android:id="@+id/scoreSheetButton"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/statsButton"
+        android:layout_marginTop="25dp"
+        android:text="ScoreSheet"
+        android:textSize="30dp" />
 
-        <Button
-            android:id="@+id/scoreSheetButton"
-            android:layout_width="250dp"
-            android:layout_height="100dp"
-            android:text="ScoreSheet"
-            android:textSize="30dp" />
+    <Button
+        android:id="@+id/chooseTeamButton"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/scoreSheetButton"
+        android:layout_marginTop="25dp"
+        android:text="Choose a Team"
+        android:textSize="30dp" />
 
-        <Button
-            android:id="@+id/chooseTeamButton"
-            android:layout_width="250dp"
-            android:layout_height="100dp"
-            android:text="Choose a Team"
-            android:textSize="30dp" />
-    </LinearLayout>
-
-</LinearLayout>
+</RelativeLayout>
