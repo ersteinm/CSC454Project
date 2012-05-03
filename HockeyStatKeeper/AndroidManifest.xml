@@ -22,6 +22,8 @@
         </activity>
         <activity android:name="ShotDataActivity"></activity>
         <activity android:name="FaceoffDataActivity"></activity>
+        <activity android:name="SelectTeamActivity"></activity>
+        <activity android:name="AssistsDataActivity"></activity>
     </application>
 
 </manifest>

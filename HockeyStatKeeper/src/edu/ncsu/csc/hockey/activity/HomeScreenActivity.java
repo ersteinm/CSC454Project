@@ -26,24 +26,22 @@ public class HomeScreenActivity extends Activity {
 		});
 		
 		
-//		Button scoreSheet = (Button) findViewById(R.id.statsButton);
-//		liveStats.setOnClickListener(new OnClickListener() {
-//			@Override
-//			public void onClick(View v) {
-//				Intent stats = new Intent(HomeScreen.this, ScoreSheetActivity.class);
-//        		HomeScreen.this.startActivity(stats);
-//			}
-//			
-//		});
-//		
-//		Button teamSelect = (Button) findViewById(R.id.statsButton);
-//		liveStats.setOnClickListener(new OnClickListener() {
-//			@Override
-//			public void onClick(View v) {
-//				Intent stats = new Intent(HomeScreen.this, TeamSelectActivity.class);
-//        		HomeScreen.this.startActivity(stats);
-//			}
-//			
-//		});
+		Button scoreSheet = (Button) findViewById(R.id.scoreSheetButton);
+		scoreSheet.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				Intent scores = new Intent(HomeScreenActivity.this, AssistsDataActivity.class);
+        		HomeScreenActivity.this.startActivity(scores);
+			}
+			
+		});
+		
+		Button teamSelect = (Button) findViewById(R.id.chooseTeamButton);
+		teamSelect.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				Intent teams = new Intent(HomeScreenActivity.this, SelectTeamActivity.class);
+        		HomeScreenActivity.this.startActivity(teams);
+			}
+			
+		});
 	}
 }
