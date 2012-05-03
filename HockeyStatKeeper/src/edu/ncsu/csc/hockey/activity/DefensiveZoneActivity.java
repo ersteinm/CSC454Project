@@ -29,9 +29,9 @@ public class DefensiveZoneActivity extends Activity {
         dButton.setText("Switch to Offensive");
         dButton.setOnClickListener(new OnClickListener() {
         	public void onClick(View v) {
-//        		Intent myIntent = new Intent(DefensiveZoneActivity.this, OffensiveZoneActivity.class);
-//        		DefensiveZoneActivity.this.startActivity(myIntent);
-        		finish();
+        		Intent myIntent = new Intent(DefensiveZoneActivity.this, OffensiveZoneActivity.class);
+        		DefensiveZoneActivity.this.startActivity(myIntent);
+        		//finish();
         	}
         });
     }

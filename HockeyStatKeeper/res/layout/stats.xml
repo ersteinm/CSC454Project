@@ -5,13 +5,23 @@
     android:layout_height="fill_parent"
     android:background="@drawable/backrepeat" >
 
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Enter Data"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
     <ToggleButton
         android:id="@+id/toggleButton"
         android:layout_width="50dp"
         android:layout_height="30dp"
-        android:layout_alignParentTop="true"
+        android:layout_below="@id/textView1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="25dp"
         android:background="@android:color/transparent"
         android:tag="faceoff"
         android:textOff=" "
@@ -23,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/toggleButton"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="50dp"
         android:onClick="enterData" />
 
     <Button
@@ -32,8 +42,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imageView1"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="50dp"
         android:layout_centerHorizontal="true"
-        android:text="Button" />
+        android:text="Button"
+        android:textSize="20sp" />
 
 </RelativeLayout>

@@ -1,9 +1,12 @@
 package edu.ncsu.csc.hockey.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 public class AssistsDataActivity extends Activity {
     /** Called when the activity is first created. */
@@ -46,5 +49,11 @@ public class AssistsDataActivity extends Activity {
         		s10.setAdapter( adapter );
         		
        
+    }
+    
+    public void submitAssists(View v) {
+    	 Toast.makeText(getApplicationContext(), "Assists updated", Toast.LENGTH_SHORT).show();
+    	 Intent i = new Intent(AssistsDataActivity.this, HomeScreenActivity.class);
+    	 AssistsDataActivity.this.startActivity(i);
     }
 }

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class ShotDataActivity extends Activity {
     /** Called when the activity is first created. */
@@ -14,6 +15,7 @@ public class ShotDataActivity extends Activity {
     }
     
     public void selectPlayer(View v) {
+    	Toast.makeText(getApplicationContext(), "Shot: 15", Toast.LENGTH_SHORT).show();
     	Intent i = new Intent(ShotDataActivity.this, OffensiveZoneActivity.class);
     	ShotDataActivity.this.startActivity(i);
     }

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 public class FaceoffDataActivity extends Activity {
 
@@ -15,6 +16,7 @@ public class FaceoffDataActivity extends Activity {
     }
     
     public void submitFaceoff(View v) {
+    	Toast.makeText(getApplicationContext(), "Faceoff\nWinner: 10\nLoser: 5", Toast.LENGTH_SHORT).show();
     	Intent i = new Intent(FaceoffDataActivity.this, OffensiveZoneActivity.class);
 		FaceoffDataActivity.this.startActivity(i);
     }
