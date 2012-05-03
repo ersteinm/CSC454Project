@@ -2,11 +2,44 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="@drawable/backrepeat"
+    android:gravity="center"
     android:orientation="vertical" >
 
-    <TextView
+    <LinearLayout
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/hello" />
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:text="HockeyShots!"
+            android:textSize="40dp" />
+
+        <Button
+            android:id="@+id/statsButton"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:text="Live Stats"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/scoreSheetButton"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:text="ScoreSheet"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/chooseTeamButton"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:text="Choose a Team"
+            android:textSize="30dp" />
+    </LinearLayout>
 
 </LinearLayout>
