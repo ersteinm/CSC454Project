@@ -27,7 +27,7 @@
         <item >20</item>
     </string-array>
     
-     <string-array name="teams">
+    <string-array name="teams">
         <item >Team 1</item>
         <item >Team 2</item>
         <item >Team 3</item>
@@ -36,10 +36,17 @@
         
     </string-array>
     
-     <string-array name="periods">
+    <string-array name="periods">
         <item >Period 1</item>
         <item >Period 2</item>
         <item >Period 3</item>
+        
+    </string-array>
+    
+    <string-array name="games">
+        <item >Team 1 vs Team 2 - 5/1/2012</item>
+        <item >Team 3 vs Team 4 - 5/3/2012</item>
+        <item >Team 1 vs Team 4 - 5/5/2012</item>
         
     </string-array>
 

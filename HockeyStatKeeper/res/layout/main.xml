@@ -18,7 +18,7 @@
     <Button
         android:id="@+id/statsButton"
         android:layout_width="250dp"
-        android:layout_height="100dp"
+        android:layout_height="75dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="25dp"
@@ -28,7 +28,7 @@
     <Button
         android:id="@+id/scoreSheetButton"
         android:layout_width="250dp"
-        android:layout_height="100dp"
+        android:layout_height="75dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/statsButton"
         android:layout_marginTop="25dp"
@@ -38,11 +38,21 @@
     <Button
         android:id="@+id/chooseTeamButton"
         android:layout_width="250dp"
-        android:layout_height="100dp"
+        android:layout_height="75dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/scoreSheetButton"
         android:layout_marginTop="25dp"
         android:text="Choose Teams"
+        android:textSize="30dp" />
+    
+    <Button
+        android:id="@+id/chooseGameButton"
+        android:layout_width="250dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/chooseTeamButton"
+        android:layout_marginTop="25dp"
+        android:text="Choose a Game"
         android:textSize="30dp" />
 
 </RelativeLayout>

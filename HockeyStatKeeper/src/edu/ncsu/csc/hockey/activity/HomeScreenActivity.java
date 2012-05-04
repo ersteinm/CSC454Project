@@ -43,5 +43,14 @@ public class HomeScreenActivity extends Activity {
 			}
 			
 		});
+		
+		Button gameSelect = (Button) findViewById(R.id.chooseGameButton);
+		gameSelect.setOnClickListener(new OnClickListener() {
+			public void onClick(View v) {
+				Intent games = new Intent(HomeScreenActivity.this, SelectGameActivity.class);
+        		HomeScreenActivity.this.startActivity(games);
+			}
+			
+		});
 	}
 }
