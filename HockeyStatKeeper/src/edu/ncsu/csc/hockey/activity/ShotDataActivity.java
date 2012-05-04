@@ -20,4 +20,10 @@ public class ShotDataActivity extends Activity {
     	ShotDataActivity.this.startActivity(i);
     }
     
+    public void onBackPressed() {
+    	Intent i = new Intent(ShotDataActivity.this, OffensiveZoneActivity.class);
+   	 	ShotDataActivity.this.startActivity(i);
+    	return;
+    }
+    
 }

@@ -32,7 +32,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/statsButton"
         android:layout_marginTop="25dp"
-        android:text="ScoreSheet"
+        android:text="Assists"
         android:textSize="30dp" />
 
     <Button
@@ -42,7 +42,7 @@
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/scoreSheetButton"
         android:layout_marginTop="25dp"
-        android:text="Choose a Team"
+        android:text="Choose Teams"
         android:textSize="30dp" />
 
 </RelativeLayout>

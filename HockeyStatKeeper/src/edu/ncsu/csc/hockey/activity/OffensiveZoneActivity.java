@@ -5,8 +5,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Spinner;
 import android.widget.ToggleButton;
 
 public class OffensiveZoneActivity extends Activity {
@@ -18,6 +20,12 @@ public class OffensiveZoneActivity extends Activity {
         setContentView(R.layout.stats);
         ImageView iView = (ImageView) findViewById(R.id.imageView1);
         iView.setBackgroundResource(R.drawable.ozone);
+        
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.periods, android.R.layout.simple_spinner_item );
+      	adapter.setDropDownViewResource( android.R.layout.simple_spinner_dropdown_item );
+      	Spinner s = (Spinner) findViewById( R.id.spinner1 );
+		s.setAdapter(adapter);
+        
         togButton = (ToggleButton) findViewById(R.id.toggleButton);
         togButton.setButtonDrawable(R.drawable.faceoffbutton);
         togButton.setOnClickListener(new OnClickListener() {

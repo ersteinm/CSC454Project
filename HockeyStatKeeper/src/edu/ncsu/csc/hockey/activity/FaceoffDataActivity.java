@@ -20,4 +20,10 @@ public class FaceoffDataActivity extends Activity {
     	Intent i = new Intent(FaceoffDataActivity.this, OffensiveZoneActivity.class);
 		FaceoffDataActivity.this.startActivity(i);
     }
+    
+    public void onBackPressed() {
+    	Intent i = new Intent(FaceoffDataActivity.this, OffensiveZoneActivity.class);
+   	 	FaceoffDataActivity.this.startActivity(i);
+    	return;
+    }
 }

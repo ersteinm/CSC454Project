@@ -56,4 +56,5 @@ public class AssistsDataActivity extends Activity {
     	 Intent i = new Intent(AssistsDataActivity.this, HomeScreenActivity.class);
     	 AssistsDataActivity.this.startActivity(i);
     }
+    
 }
