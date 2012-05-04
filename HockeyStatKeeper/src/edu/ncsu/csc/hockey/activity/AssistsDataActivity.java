@@ -57,4 +57,8 @@ public class AssistsDataActivity extends Activity {
     	 AssistsDataActivity.this.startActivity(i);
     }
     
+    public void delete(View v) {
+    	Toast.makeText(getApplicationContext(), "Goal Deleted", Toast.LENGTH_SHORT).show();
+    }
+    
 }
