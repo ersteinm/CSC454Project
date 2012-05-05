@@ -48,6 +48,26 @@ public class AssistsDataActivity extends Activity {
         		Spinner s10 = (Spinner) findViewById( R.id.spinner10 );
         		s10.setAdapter( adapter );
         		
+        		Spinner s11 = (Spinner) findViewById( R.id.spinner11 );
+        		s11.setAdapter( adapter );
+        		s11.setSelection(8);
+        		
+        		Spinner s12 = (Spinner) findViewById( R.id.spinner12 );
+        		s12.setAdapter( adapter );
+        		s12.setSelection(9);
+        		
+        		Spinner s13 = (Spinner) findViewById( R.id.spinner13 );
+        		s13.setAdapter( adapter );
+        		s13.setSelection(18);
+        		
+        		Spinner s14 = (Spinner) findViewById( R.id.spinner14 );
+        		s14.setAdapter( adapter );
+        		s14.setSelection(14);
+        		
+        		Spinner s15 = (Spinner) findViewById( R.id.spinner15 );
+        		s15.setAdapter( adapter );
+        		s15.setSelection(2);
+        		
        
     }
     
